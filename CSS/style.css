@@ -11,6 +11,11 @@ body{
   background-size: cover;
   background-attachment: fixed;
 }
+@media screen and (max-width: 900px) and (min-width: 700px){
+  #header{
+    height: 98vh;
+  }
+}
 .user-box{
   top: 45%;
   left:50%;
