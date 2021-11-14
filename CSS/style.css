@@ -5,7 +5,7 @@ body{
 }
 /* ------Header---- */
 #header{
-  height: 120vh;
+  height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("background.jpg");
   background-position: center;
   background-size: cover;
@@ -193,6 +193,122 @@ body{
   border-top-left-radius: 50px;
   border-bottom-right-radius: 50px;
   transition: 1s;
+}
+/* ----------Testimonials------------- */
+#testimonials{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #343f56;
+}
+.test{
+  text-align: center !important;
+  background: #343f56;
+  padding: 10px 0;
+  position: relative;
+  top: 10px;
+  color: #f5e6ca;
+}
+.container1{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  z-index: 1;
+}
+.container1 .card{
+  position: relative;
+  width: 280px;
+  height: 400px;
+  margin: 30px;
+  box-shadow: 20px 20px 50px rgba(0, 0 ,0, 0.5);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  border-filter: blur(5px);
+}
+.container1 .card .content{
+  padding: 20px;
+  text-align: center;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: 0.5s;
+}
+.container1 .card:hover .content{
+  transform: translateY(0px);
+  opacity: 1;
+}
+.container1 .card .content img{
+  position: absolute;
+  top: -25px;
+  right: 0;
+  width: 150px;
+  border-radius: 100%;
+  color: rgba(255,255,255,0.09);
+  pointer-events: none;
+  z-index: -1;
+}
+.container1 .card .content .Heizel{
+  position: absolute;
+  top: -55px;
+  right: 0;
+  width: 150px;
+  border-radius: 100%;
+  color: rgba(255,255,255,0.09);
+  pointer-events: none;
+  z-index: -1;
+}
+.container1 .card .content .ger{
+  position: absolute;
+  top: -45px;
+  right: 0;
+  width: 150px;
+  border-radius: 100%;
+  color: rgba(255,255,255,0.09);
+  pointer-events: none;
+  z-index: -1;
+}
+.container1 .card .content h3{
+  margin-top: 30px;
+  font-size: 1.8em;
+  color: #f5e6ca;
+  z-index: 1;
+}
+.container1 .card .content small{
+  color: #f5e6ca;
+  font-size: 14px;
+}
+.container1 .card .content p{
+  font-size: 1em;
+  color: #f5e6ca;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  margin-top: 40px;
+  z-index: 1;
+}
+.container1 .card .content .fas{
+  color: rgba(255, 255, 255, 0.25);
+  font-size: 26px;
+}
+ .left{
+    display: inline-block;
+    left: -10px;
+    position: relative;
+}
+.container1 .card .content .right{
+    display: inline-block;
+    right: -10px;
+    position: relative;
+    top: 10px;
 }
 /* -------------Contact----- */
 .contact{
